@@ -1,0 +1,389 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos del Body */
+body {
+    background-image: url(../img/background.jpeg);
+}
+
+/* Estilos del Encabezado (Header) */
+.header {
+    background-color: rgb(0, 60, 255);
+    padding: 1rem;
+    align-items: center;
+    border-bottom: solid black 5px;
+}
+
+/* Estilos del Menú */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para los Enlaces dentro del Menú */
+.menu li a {
+    position: relative;
+    justify-content: center;
+    transition: ease 0.2s;
+}
+
+/* Estilos al Pasar el Ratón sobre los Enlaces del Menú */
+.menu li a:hover {
+    color: white;
+}
+
+.menu label{
+    display: none;
+    cursor: pointer;
+}
+
+.img-menu{
+    width: 50px;
+    height: 50px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+
+/* Estilos para el logotipo */
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Estilos para el Logo */
+.logo li a img {
+    width: 50%;
+    transition: transform ease 0.2s;
+}
+
+/* Estilos al Pasar el Ratón sobre el Logo */
+.logo li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos del navbar */
+.navbar{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilos de los Elementos de la Navegación */
+.navbar li {
+    position: relative;
+    float: left;
+    padding: 10px;
+}
+
+/* Estilos para los Enlaces dentro de la Navegación */
+.navbar li a {
+    position: relative;
+    justify-content: center;
+}
+
+
+/* Estilos de la Sección */
+.section {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+/* Estilos del Contenedor de Bienvenida */
+.welcome-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../img/Sin\ título.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px black;
+}
+
+/* Estilos del Contenido de Bienvenida */
+.welcome-container h1 {
+    margin-top: 70px;
+    text-shadow: 0 4px 8px black;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.welcome-container p {
+    margin-top: 10px;
+    text-shadow: 0 4px 8px black;
+    color: white;
+    font-size: 25px;
+}
+
+.welcome-container button {
+    border-style: none;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 0 4px 8px black;
+    color: rgb(0, 60, 255);
+    margin-top: 25px;
+    cursor: pointer;
+    transition: ease 0.2s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Estilos al Pasar el Ratón sobre los Botones de Bienvenida */
+.welcome-container button:hover {
+    background-color: rgb(0, 60, 255);
+    color: black;
+    font-size: 20px;
+}
+
+/* Estilos del Contenido */
+.content {
+    text-align: justify;
+}
+
+
+
+/* Estilos del Contenido Principal */
+.content h2 {
+    color: rgb(0, 60, 255);
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 4px 8px black;
+    font-style: bold;
+}
+
+/* Estilos de la Información del Contenido */
+.content-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Estilos de los Divs de Información */
+.info-div {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para los Títulos en los Divs de Información */
+.info-div h3 {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0 4px 8px black;
+    transition: ease 0.2s;
+}
+
+/* Estilos para el Texto dentro de los Divs de Información */
+.info-div p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.info-div h3:hover {
+    color: rgb(0, 60, 255);
+}
+
+/* Estilos de Imágenes en la Información */
+.img-info {
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Estilos de Imágenes dentro de los Divs de Información */
+.img-info img {
+    width: 100%;
+    border-radius: 10px;
+    transition: ease 0.2s;
+}
+
+/* Estilos al Pasar el Ratón sobre las Imágenes */
+.img-info img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el Texto en la Información */
+.txt-info {
+    height: 100px;
+}
+
+/* Estilos de los Botones de Información */
+.btn-info {
+    position: relative;
+    border-style: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: ease 0.2s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Estilos al Pasar el Ratón sobre los Botones de Información */
+.btn-info:hover {
+    color: black;
+    background-color:rgb(0, 60, 255);
+}
+
+
+
+/* Estilos del Pie de Página (Footer) */
+.footer {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    border-top: solid rgb(0, 60, 255) 5px;
+}
+
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+
+.footer-item h3{
+    color:rgb(0, 60, 255);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-footer li a img {
+    width: 60%;
+    transition: transform ease 0.2s;
+}
+
+.logo-footer li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos del Contenido del Footer */
+.copy-container p {
+    color: rgb(0, 60, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-nav{
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-nav li{
+    padding: 10px;
+}
+
+.footer-nav li a{
+    font-size: 20px;
+    color: white;
+    transition: ease 0.2s;
+}
+
+.footer-nav li a:hover{
+    color: rgb(0, 60, 255);
+}
+
+@media (width < 1150px){
+
+    .info-div p{
+        font-size: 16px;
+    }
+}
+
+@media (width < 900px){
+
+    .info-div p{
+        font-size: 24px;
+    }
+
+    .copy-container p{
+        font-size: 16px;
+    }
+}
+
+@media (width < 820px) {
+    #btn-menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .menu label{
+        display: inline;
+    }
+
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 125px;
+        right: 20px;
+        background-color: rgb(0, 60, 255);
+        border: black solid 4px;
+    }
+
+    .navbar li{
+        float: none;
+    }
+}
+
+@media (width < 700px){
+    .content-info{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-div p{
+        font-size: 16px;
+    }
+
+    .footer-nav li a{
+        font-size: 16px;
+    }
+
+    .welcome-container{
+        background-size: 120%;
+    }
+}
+
+@media (width < 550px){
+    .content-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info-div p{
+        font-size: 18px;
+    }
+
+    .copy-container p{
+        font-size: 14px;
+    }
+
+    .footer-menu{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    
+    .welcome-container{
+        background-size: 150%;
+    }
+}
